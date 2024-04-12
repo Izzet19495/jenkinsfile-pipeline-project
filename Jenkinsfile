@@ -7,6 +7,10 @@ pipeline {
                 sh 'echo using shell within Jenkinsfile'
                 echo 'not using shell in the Jenkinsfile'
             }
+        stage('test') {
+            steps {
+                echo "Izzet is here"
+            }
         }
     }
 }
